@@ -1,0 +1,14 @@
+h1 {
+    background-color: aquamarine;
+    border: 1px solid salmon;
+    padding: 10px;
+    text-decoration: underline;
+    margin: 10px;
+}
+
+h2 {
+    background-color: azure;
+    border: 1px solid salmon;
+    padding: 5px;
+    margin: 10px;
+}
