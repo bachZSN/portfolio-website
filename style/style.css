@@ -3,6 +3,8 @@ body {
     padding-top: 300px;
     transition: padding-top 0.5s ease;
     background-image: url(../pictures/hyoukaFPic.jpeg);
+    background-color: lavenderblush;
+    background-repeat: repeat-x;
 }
 
 header {
@@ -34,4 +36,61 @@ h2 {
     border: 1px solid salmon;
     padding: 5px;
     margin: 10px;
+}
+
+p.navigation {
+    background-color: rgba(57, 233, 233, 0);
+}
+
+p {
+    background-color: rgba(57, 233, 233, 0.24);
+}
+
+ul {
+    list-style: square;
+}
+
+ol {
+    list-style: hiragana, inside;
+}
+
+.flexcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.flexitem {
+    background: #0bd;
+    color: antiquewhite;
+    margin: 20px 10px;
+    padding: 20px 150px;
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 100px);
+    gap: 10px;
+    border: 1px dashed;
+}
+
+.griditem {
+    background: #0bd;
+    color: antiquewhite;
+    padding: 20px;
+    text-align: center;
+    border: 1px dotted;
+}
+
+@media (max-width: 600px) {
+    .gridcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .griditem {
+        background-color: blueviolet;
+    }
 }
