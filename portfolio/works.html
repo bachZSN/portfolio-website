@@ -4,6 +4,8 @@
 <head>
     <title>Works ::: Bach's Portfolio Website</title>
     <link rel="icon" type="image/x-icon" href="../favicon/faviconHB.ico">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
     <meta charset="UTF-8">
     <meta name="description" content="Works">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,51 +14,54 @@
 </head>
 
 <body>
-    <header>
-        <h1>Hacbe's Page</h1>
-        <p>This website is from HacBe and will be further used to make his own portfolio.</p>
-        <nav>
-            <ul>
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="works.html">Works</a></li>
-                <li><a href="achievements.html">Achievements</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-        </nav>
+    <header id="page_header">
     </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active_navtab" href="works.html">Works</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
     <main>
-        <article>
+        <div class="flexcontainer">
             <header>
-                <h2>Pandemie Game</h2>
+                <h1>Programming Projects</h1>
             </header>
-            <p>
-                This project is an digital version of the <a href="https://en.wikipedia.org/wiki/Pandemic_(board_game)" target="_blank">
-                Pandemic Board Game</a> with its original rules using native Java. 
-                This project was done in collaboration with two friends for a school project.
-                <br>
-                My most notable contributions were the implementation of:
-            </p>
-            <ul>
-                <li>underlying graph data structure using a HashSet</li>
-                <li>responsive UI with zoom, scroll, layout and coloring</li>
-                <li>card shuffling algorithm</li>
-                <li>breath first search algorithm</li>
-            </ul>
-            <img src="../pictures/pandemie.png" alt="ingame-pic-pandemie" style="width:1280; height:720;">
-        </article>
-        <article>
-            <header>
-                <h2>Rubik's Cube solver</h2>
-            </header>
-            <p>
-                This project would be a solver of the popular 3x3x3 Rubik's Cube from any given position using native Haskell.
-                <br>
-                This woulb be achieved by encoding all states into an array of fixed positions of every single 28 induvidual cubes.
-                While eradicating most symmetrical positions the self-implemented CDCL algorithm will try to find the solution.
-            </p>
-        </article>
+            <article>
+                <header>
+                    <h2>Pandemie Game</h2>
+                </header>
+                <p>
+                    This project is an digital version of the <a href="https://en.wikipedia.org/wiki/Pandemic_(board_game)" target="_blank">
+                    Pandemic Board Game</a> with its original rules using native Java. 
+                    This project was done in collaboration with two friends for a school project.
+                    <br>
+                    My most notable contributions were the implementation of:
+                </p>
+                <ul>
+                    <li>underlying graph data structure using a HashSet</li>
+                    <li>responsive UI with zoom, scroll, layout and coloring</li>
+                    <li>card shuffling algorithm</li>
+                    <li>breath first search algorithm</li>
+                </ul>
+                <img id="pandemie_img" src="../pictures/pandemie.png" alt="ingame-pic-pandemie" style="width:1280; height:720;">
+            </article>
+            <article>
+                <header>
+                    <h2>Rubik's Cube solver</h2>
+                </header>
+                <p>
+                    This project would be a solver of the popular 3x3x3 Rubik's Cube from any given position using native Haskell.
+                    <br>
+                    This woulb be achieved by encoding all states into an array of fixed positions of every single 28 induvidual cubes.
+                    While eradicating most symmetrical positions the self-implemented CDCL algorithm will try to find the solution.
+                </p>
+            </article>
+        </div>
     </main>
 </body>
 </html>

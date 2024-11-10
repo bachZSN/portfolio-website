@@ -4,6 +4,8 @@
 <head>
     <title>About ::: Bach's Portfolio Website</title>
     <link rel="icon" type="image/x-icon" href="../favicon/faviconHB.ico">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
     <meta charset="UTF-8">
     <meta name="description" content="About Me">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,68 +14,71 @@
 </head>
 
 <body>
-    <header>
-        <h1>Hacbe's Page</h1>
-        <p>This website is from HacBe and will be further used to make his own portfolio.</p>
-        <nav>
-            <ul>
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="works.html">Works</a></li>
-                <li><a href="achievements.html">Achievements</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header id="page_header"></header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li class="active_navtab"><a href="about.html">About</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
     <main>
-        <article>
-            <header>
-                <h1>About Bach</h1>
-            </header>
-            <p>
-                My name is Bach and I am studying Computer Science.
-                My favorite subjects are mostly theoretical such as Fortgeschrittene Programmierung (Haskell), Modellierung and other math subjects.
-            </p>
-        </article>
+        <header>
+            <h1>About Bach</h1>
+        </header>
+        <p>
+            My name is Bach and I studied Computer Science.
+            My favorite subjects are mostly theoretical such as Fortgeschrittene Programmierung (Haskell), Modellierung and other math subjects.
+        </p>
         <section>
-            <div class="anime_title">
+            <header>
                 <h2>My favorite Anime</h2>
-                <p>
-                    Hyouka
-                </p>
-                <img src="../pictures/hyoukaFPic.jpeg" alt="hyoukaFrontPic">
-            </div>
-            <div class="anime_title">
-                <p>
-                    Accel World
-                </p>
-                <img src="../pictures/accelworldFPic.jpeg" alt="accelworldFrontPic">
-            </div>
-            <div class="anime_title">
-                <p>
-                    Toradora!
-                </p>
-                <img src="../pictures/toradoraFPic.jpeg" alt="toradoraFrontPic">
+            </header>
+            <div class="flexcontainer">
+                <div class="anime_title">
+                    <p>
+                        Hyouka
+                    </p>
+                    <img src="../pictures/hyoukaFPic.jpeg" alt="hyoukaFrontPic">
+                </div>
+                <div class="anime_title">
+                    <p>
+                        Accel World
+                    </p>
+                    <img src="../pictures/accelworldFPic.jpeg" alt="accelworldFrontPic">
+                </div>
+                <div class="anime_title">
+                    <p>
+                        Toradora!
+                    </p>
+                    <img src="../pictures/toradoraFPic.jpeg" alt="toradoraFrontPic">
+                </div>
             </div>
         </section>
         <section>
-            <h2>Languages</h2>
-            <p>
-                German 100%
-            </p>
-            <p>
-                Vietnamese 95%
-            </p>
-            <p>
-                English 90%
-            </p>
-            <p>
-                Japanese 50%
-            </p>
-            <p>
-                French 50%
-            </p>
+            <header>
+                <h2>Languages</h2>
+            </header>
+            <ul>
+                <li>
+                    German 100%
+                </li>
+                <li>
+                    Vietnamese 95%
+                </li>
+                <li>
+                    English 95%
+                </li>
+                <li>
+                    Japanese 50%
+                </li>
+                <li>
+                    French 50%
+                </li>
+            </ul>
         </section>
     </main>
 </body>

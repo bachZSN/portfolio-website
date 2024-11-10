@@ -8,9 +8,9 @@
 */
 body {
     background-color: #ac8968;
-    padding-top: 100px;
+    color: #202020;
     transition: padding-top 0.5s ease;
-    /* background-image: url(../pictures/papyrus.png); */
+    background-image: url(../pictures/inspiration-geometry.png);
     background-repeat: repeat;
     font-family: Poppins, sans-serif;
     font-size: 16px;
@@ -22,45 +22,81 @@ header {
 }
 
 nav {
-    height: 50px;
     background-color: #3e362ecc;
+    color: #ffffff;
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 999;
 }
 
 nav > ul {
+    display: flex;
+    justify-content: space-evenly;
     list-style: none;
+    text-align: center;
+}
+
+nav li a, nav li a:visited, nav li a:link {
+    display: block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: rgb(56, 56, 145);
+}
+
+.active_navtab {
+    background-color: #a69080cc;
+}
+
+nav a:hover {
+    background-color: #3e362e;
+    color: white;
+    text-decoration: underline;
+    transition: .1s ease;
+}
+
+nav a:active {
+    background-color: #3e362eea;
+}
+
+#page_header h1 {
+    border: 1px solid;
+    text-decoration: underline;
+    font-size: 2rem;
 }
 
 h1 {
     font-family: "Abril FatFace", serif;
     font-weight: lighter;
     color: #3e362e;
-    border: 1px solid;
     padding: 10px;
-    text-decoration: underline;
     margin: 10px;
 }
 
 h2 {
-    border: 1px solid;
+    font-family: "Abril FatFace", serif;
+    font-weight: lighter;
+    color: #865d36;
     padding: 5px;
     margin: 10px;
 }
 
-p {
-    color: #000000;
-}
-
-ul {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: square;
-}
-
 ol {
     list-style: hiragana, inside;
+}
+
+ul.social_icons {
+    list-style: none;
 }
 
 .flexcontainer {
@@ -90,6 +126,11 @@ ol {
     padding: 20px;
     text-align: center;
     border: 1px dotted;
+}
+
+#pandemie_img {
+    width: 100%;
+    height: auto;
 }
 
 @media (max-width: 600px) {
