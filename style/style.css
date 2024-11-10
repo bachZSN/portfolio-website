@@ -1,9 +1,16 @@
+
+/* Color palette
+    3e362e dark gray
+    865d36 coffee
+    93785b mud
+    ac8968 cream
+    a69080 stone
+*/
 body {
-    background-color: beige;
+    background-color: #ac8968;
     padding-top: 100px;
     transition: padding-top 0.5s ease;
-    background-image: url(../pictures/papyrus.png);
-    background-color: lavenderblush;
+    /* background-image: url(../pictures/papyrus.png); */
     background-repeat: repeat;
     font-family: Poppins, sans-serif;
     font-size: 16px;
@@ -16,36 +23,34 @@ header {
 
 nav {
     height: 50px;
-    background-color: rgba(0, 176, 207, .3);
+    background-color: #3e362ecc;
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
 }
 
 nav > ul {
-
+    list-style: none;
 }
 
 h1 {
     font-family: "Abril FatFace", serif;
     font-weight: lighter;
-    color: navy;
-    background-color: aquamarine;
-    border: 1px solid salmon;
+    color: #3e362e;
+    border: 1px solid;
     padding: 10px;
     text-decoration: underline;
     margin: 10px;
 }
 
 h2 {
-    background-color: azure;
-    border: 1px solid salmon;
+    border: 1px solid;
     padding: 5px;
     margin: 10px;
 }
 
 p {
-    background-color: rgba(57, 233, 233, 0.24);
+    color: #000000;
 }
 
 ul {
