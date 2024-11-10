@@ -3,19 +3,15 @@
         navbar
             responsive
             modern button design
-            active tab
-            hover tab
+            ~~active tab~~
+            ~~hover tab~~
         content
             brief introduction about myself
     
     about
-
     works
-
     achievements
-
     resume
-
     contacts
 
 Color palette
@@ -27,8 +23,6 @@ Color palette
 
 
 JS exercises
-
-
 
 SASS
 
