@@ -34,13 +34,16 @@ nav {
 
 nav > ul {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: center;
     list-style: none;
     text-align: center;
+    overflow: auto;
+    white-space: nowrap;
 }
 
 nav li a, nav li a:visited, nav li a:link {
-    display: block;
+    display: inline-block;
     color: black;
     padding: 14px 16px;
     text-decoration: none;
