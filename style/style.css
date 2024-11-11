@@ -35,7 +35,7 @@ nav {
 nav > ul {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: center safe;
     list-style: none;
     text-align: center;
     overflow: auto;
